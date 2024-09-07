@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket game</title>
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    //it generate random number between 0 and 3;
+    let randomNumber = Math.random()*3;
+    let computerChoise;
+    if(randomNumber > 0  && randomNumber <=1){
+         computerChoise = 'Bat';
+        // console.log('computer choose Bat');
+    } else if(randomNumber > 1 && randomNumber <=2){
+         computerChoise = 'Ball';
+        // console.log('computer choose Ball');
+    } else {
+         computerChoise = 'Stump';
+        // console.log('computer choose Stump');
+    }
+     
+     let result;
+     if(computerChoise === 'Ball'){
+        result='You have Won';
+    } else if(computerChoise === 'Stump'){
+        result='Computer has Won';
+    } else if(computerChoise === 'Bat'){
+        result='Match Tie';
+
+    }
+    alert(`you have choosen Bat. computer choice is ${computerChoise}. ${result}`);
+
+    ">Bat</button>
+
+    <button onclick="
+    randomNumber = Math.random()*3;
+     if(randomNumber > 0  && randomNumber <=1){
+         computerChoise = 'Bat';
+        } else if(randomNumber > 1 && randomNumber <=2){
+       computerChoise = 'Ball';
+        } else {
+        computerChoise = 'Stump';
+        }
+     
+    if(computerChoise === 'Stump'){
+        result='You have Won';
+    } else if(computerChoise === 'Bat'){
+        result='Computer has Won';
+    } else if(computerChoise === 'Ball'){
+        result='Match Tie';
+
+    }
+    alert(`you have choosen Ball. computer choise is ${computerChoise}. ${result}`);
+    ">Ball</button>
+
+
+    <button onclick="
+    randomNumber = Math.random()*3;
+     if(randomNumber > 0  && randomNumber <=1){
+         computerChoise = 'Bat';
+        } else if(randomNumber > 1 && randomNumber <=2){
+       computerChoise = 'Ball';
+        } else {
+        computerChoise = 'Stump';
+        }
+        
+
+    if(computerChoise === 'Bat'){
+        result='You have Won';
+    } else if(computerChoise === 'Ball'){
+        result='Computer has Won';
+    } else if(computerChoise === 'Stump'){
+        result='Match Tie';
+
+    }
+    alert(`you have choosen Stump. computer choise is ${computerChoise}. ${result}`);
+    ">Stump</button>
+    
+
+    <script>
+        
+      
+    </script>
+    
+</body>
+</html>

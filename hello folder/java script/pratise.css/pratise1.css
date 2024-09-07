@@ -1,0 +1,18 @@
+#add{
+    background-color: rgb(145, 241, 210);
+    border-radius: 8px;
+    margin-right: 30px;
+    border:none;
+    padding:5px;
+}
+#wish{
+    border-radius: 7px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: none;
+    border: 2px solid black ;
+}
+#class{
+    display: flex;
+}

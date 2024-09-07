@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket game</title>
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    let computerChoise = getCompChoise();
+    let resultMsg = getResult('Bat',computerChoise);
+     showResult('Bat',computerChoise,resultMsg);
+     
+    ">Bat</button>
+
+    <button onclick="
+    computerChoise = getCompChoise();
+    resultMsg = getResult('Ball',computerChoise); 
+    showResult('Ball',computerChoise,resultMsg);
+    ">Ball</button>
+
+    <button onclick="
+    computerChoise = getCompChoise();
+    resultMsg = getResult('Stump',computerChoise);
+    showResult('Stump',computerChoise,resultMsg);    
+    ">Stump</button>
+    
+
+    <script>
+        let scoreContainer = {
+            WIN : 0,
+            LOST : 0,
+            TIE : 0,
+        
+        
+        }
+
+
+
+
+        function getCompChoise(){
+            let randomNumber = Math.random()*3;
+            if(randomNumber<=1){
+                return 'Bat';
+            }else if(randomNumber<=2){
+                return 'Ball';
+            }else {
+                return 'Stump';
+            }
+        }
+        
+        function getResult(userMove,computerMove){
+           
+            if(userMove === 'Bat'){
+                if(computerMove === 'Ball'){
+                    scoreContainer.WIN++;
+                    return 'YOU HAVE WON';
+                } else if(computerMove === 'Stump'){
+                    scoreContainer.LOST++;
+                    return 'COMPUTER HAS WON';
+                } else if(computerMove === 'Bat'){
+                    scoreContainer.TIE++;
+                    return 'MATCH TIE';
+                }
+            }else if(userMove === 'Ball'){
+                if(computerMove === 'Stump'){
+                    scoreContainer.WIN++;
+                    return 'YOU HAVE WON';
+                } else if(computerMove === 'Bat'){
+                    scoreContainer.LOST++;
+                    return 'COMPUTER HAS WON';
+                } else if(computerMove === 'Ball'){
+                    scoreContainer.TIE++;
+                    return 'MATCH TIE';
+                }
+            }else{
+                if(computerMove === 'Bat'){
+                    scoreContainer.WIN++;
+                    return 'YOU HAVE WON';
+                } else if(computerMove === 'Ball'){
+                    scoreContainer.LOST++;
+                    return 'COMPUTER HAS WON';
+                } else if(computerMove === 'Stump'){
+                    scoreContainer.TIE++;
+                    return 'MATCH TIE';
+
+                }
+            }
+        }
+        function showResult(userMove,computerMove,result){
+            // console.log(scoreContainer);
+         alert(`you have choosen : ${userMove}. computer choice is :  ${computerChoise}.
+         
+         result is ${resultMsg},
+         
+         WON: ${scoreContainer.WIN}, LOST: ${scoreContainer.LOST}, TIE : ${scoreContainer.TIE},
+         `);
+
+        }
+        
+      
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    color:orchid;
+    
+}
+body{
+    background-color: black;
+}
+h1{
+    color:brown;
+    background-color:blueviolet;
+    text-decoration: none;
+}
+p{
+    background-color: antiquewhite;
+}
+pre{
+    background-color: aqua;
+}
+section{
+    background-color: rgb(11, 119, 83);
+}
+#butt{
+    color:blue;
+    background-color: rgb(151, 255, 113);
+}
+#ac{
+    color: blue;
+    background-color: rgb(151, 255, 113);
+}
+input{
+    color: blue;
+    background-color:rgb(151, 255, 113) ;
+}
+#course{
+    background-color: aqua;
+    color: blue;
+}
+#college{
+    background-color: aqua;
+    color: blue;
+    text-align: end;
+}
+#forget{
+    background-color: rgb(255,0,0);
+    text-decoration:underline;
+}
+#submit{
+    background-color: aquamarine;
+}
+#mypara{
+    text-align:start;
+}

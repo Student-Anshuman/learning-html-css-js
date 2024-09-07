@@ -1,0 +1,28 @@
+#add1{
+    background-color: rgb(145, 241, 210);
+    border-radius: 8px;
+    margin-right: 80px;
+    border:none;
+    padding:5px;
+}
+#move{
+    border-radius:5px;
+   
+    padding: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: none;
+    border: 2px solid black ;
+    
+}
+#add2{
+    background-color: rgb(145, 241, 210);
+    border-radius: 8px;
+    margin-left: 80px;
+    border:none;
+    padding:5px;
+}
+.button{
+    
+
+}

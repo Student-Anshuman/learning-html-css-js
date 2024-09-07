@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYNTRA BAG</title>
+    <link rel="stylesheet" href="pratise.css/myntra bag.css">
+    
+</head>
+<body>
+    
+    <button id="add1" onclick="cartQuantity += 1;document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} iteams`;">Add to Bag</button>
+
+    <button id="move"onclick ="cartQuantity --;
+    document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} iteams`;">MOVE TO WISHLIST</button>
+
+    <button id="add2" onclick="cartQuantity += 2;
+    document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} iteams`;">Add 1 + 1 sale iteam</button>
+
+    <h1 id="cart-summary"></h1>
+
+<script>
+    let cartQuantity = 0;
+    document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} iteams`;
+</script>
+    
+</body>
+</html>

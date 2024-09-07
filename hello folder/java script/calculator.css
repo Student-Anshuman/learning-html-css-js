@@ -1,0 +1,38 @@
+#calculator{
+    border: 2px solid rgb(196, 186, 186);
+    background-color: rgb(231, 189, 126);
+    width : 300px;
+    height :400px;
+    padding-left: 30px;
+    padding-right: 40px;
+    
+}
+#calDisplay{
+    border: 2px solid rgb(220, 135, 135);
+    background-color: beige;
+    height : 40px;
+    width : 250px;
+    margin : 10px;
+    margin-left: 22px;
+    font-size: 30px;
+    color:rgb(10, 8, 2);
+    
+
+}
+.button-container{
+
+
+margin-left: 22px;
+
+
+
+    
+    
+}
+.button{
+    height : 50px;
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: rgb(249, 236, 236);
+}
